@@ -1,0 +1,101 @@
+
+    header {
+        position: relative;
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                width: 290px;
+                padding: 2rem;
+            }
+        }
+    }
+    .search-bar {
+        position: relative;
+        width: 100%;
+        font-weight: 400;
+        border-bottom: #c8c8c8;
+        input {
+            padding: 2.4rem;
+            background: #eaeaea;
+            font-size: 2.2rem;
+            width: 100%;
+            text-align: center;
+            outline: none;
+            border: none;
+            box-shadow: inset 0px 16px 13px -15px #c0bebe;
+        }
+        .fa-location-dot {
+            color: #616161;
+            position: absolute;
+            top: 33%;
+            left: calc(50% - 5em);
+        }
+    }
+    .header-content {
+        background-color: $color-background;
+        text-align: center;
+    }
+    header {
+        .menu-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-arrow-left {
+                font-size: 2.2rem;
+                
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+                position: absolute;
+                left: 3rem;
+            }
+            .logo {
+                width: 22rem;
+                padding: 2rem;
+            }
+        }
+    }
+
+@media (max-width: 480px) {
+    header {
+        nav {
+            // background-color: rgb(43, 145, 179);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                width: 270px;
+                padding: 2rem;
+            }
+        }
+    }
+    .search-bar {
+        position: relative;
+        width: 100%;
+        font-weight: 400;
+        input {
+            padding: 2rem;
+            background: #eaeaea;
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+            outline: none;
+            border: none;
+            box-shadow: inset 0px 16px 13px -15px #c0bebe;
+        }
+        .fa-location-dot {
+            position: absolute;
+            top: 33%;
+            left: calc(50% - 5em);
+        }
+    }
+    .header-content {
+        background-color: $color-background;
+        text-align: center;
+    }
+}

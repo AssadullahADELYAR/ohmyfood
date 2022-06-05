@@ -1,0 +1,111 @@
+.hero-image {
+    height: 28rem;
+    overflow: hidden;
+    img {
+        width: 115%;
+    }
+}
+.menu {
+    padding: 5rem 2rem;
+    background-color: #f6f6f6;
+    border-radius: 4rem 4rem 0 0;
+    margin-top: -5rem;
+    position: relative;
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+}
+.menu-container {
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        &::after {
+            content: "";
+            height: 0.4rem;
+            background-color: $color-tertiary;
+            display: block;
+            width: 4.5rem;
+            margin-top: 0.3rem;
+        }
+    }
+    
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-background;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    @include box-shadow;
+    cursor: pointer;
+    position: relative;
+}
+.menu-items {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    transition: all 1s ease;
+    .menu-info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        h4 {
+            margin-bottom: 1rem;
+            font-size: 110%;
+        }
+        p {
+            font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .price {
+        font-weight: 700;
+        display: flex;
+        .menu-animation {
+            height: 100%;
+        }
+    }
+}
+.menu-animation {
+    background-color: $color-tertiary;
+    width: 10rem;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10rem;
+}
+.menu-items:hover {
+    width: calc(100% - 10rem);
+}
+.menu-items:hover + .menu-animation {
+    margin-right: 0;
+}
+.fa-circle-check {
+    font-size: 3.5rem;
+    color: #fff;
+    transition-delay: 1s;
+    transition: transform 1s ease;
+}
+.menu-items:hover + .menu-animation > .fa-circle-check {
+    transform: rotate(360deg);
+    
+    
+}
+
+.order {
+    margin: 5rem auto;
+    width: 25rem;
+    display: block;
+}
