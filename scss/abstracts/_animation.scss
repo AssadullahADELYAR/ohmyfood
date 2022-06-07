@@ -1,0 +1,35 @@
+@keyframes menu-animate {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes loader {
+  0% {
+      transform: rotate(0);
+  }
+
+  80% {
+      opacity: 1.9;
+  }
+  100% {
+      transform: rotate(360deg);
+      opacity: 0;
+  }
+}
+@keyframes hide-loader {
+  0% {
+      display: block;
+  }
+  80% {
+      opacity: 1;
+  }
+  100% {
+      visibility: hidden;
+      opacity: 0;
+  }
+}  
