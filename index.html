@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/burger.png" type="image/x-icon">
     <!-- Font awesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Google Font Shrikhand  -->
@@ -19,7 +20,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Page Loader  -->
+    <div class="loader-container"><div class="loader"></div></div>
+    <!-- Main Container  -->
     <div class="container">
+    <!-- Header Section -->
     <header>
         <nav>
             <img src="images/logo.png" class="logo" alt="logo">
@@ -34,84 +39,84 @@
             <button class="btn-small">Explor our restaurants</button>
         </div>
     </header>
+    <!-- Header Section End  -->
     <!-- How it works container -->
-    <div class="hiw">
+    <section class="hiw">
         <h2 class="hiw-heading" >How it works</h2>
         <div class="hiw-btn-container">
             <button class="hiw-btn"><i class="fa-solid fa-mobile-screen"></i>Chose a restaurant</button>
             <button class="hiw-btn"><i class="fa-solid fa-list"></i>Create your menu</button> 
             <button class="hiw-btn"><i class="fa-solid fa-store"></i>Go enjoy it at the restaurant</button>
         </div>
-    </div>
+    </section>
     <!-- restaurants Section -->
-    <div class="restaurant">
+    <section class="restaurant">
         <h2 class="restaurant-heading">Restaurants</h2>
         <div class="restaurant-content">
-            
+            <!-- Restaurant Card n1 -->
             <div class="restaurant-cards">
                 <a href="thefullpalette.html">
-                <div class="card-image">
-                    <img src="images/fullpalette.jpg" alt="The Full Palette">
-                    <button>New</button>
-                </div>
-                <div class="card-info">
-                    <div class="info">
-                        <h3>The Full Palette</h3>
-                        <p>New York</p>
+                    <div class="card-image">
+                        <img src="images/fullpalette.jpg" alt="The Full Palette">
+                        <button>New</button>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-            </a>
+                    <div class="card-info">
+                        <div class="info">
+                            <h3>The Full Palette</h3>
+                            <p>New York</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
-            
-            <a href="">
+            <!-- Restaurant Card n2 -->
             <div class="restaurant-cards">
                 <a href="theenchantedplate.html">
-                <div class="card-image">
-                    <img src="images/enchanted.jpg" alt="The Enchanted Plate">
-                    <button class="btn-new" >New</button>
-                </div>
-                <div class="card-info">
-                    <div class="info">
-                        <h3>The Enchanted Plate</h3>
-                        <p>New York</p>
+                    <div class="card-image">
+                        <img src="images/enchanted.jpg" alt="The Enchanted Plate">
+                        <button class="btn-new" >New</button>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="card-info">
+                        <div class="info">
+                            <h3>The Enchanted Plate</h3>
+                            <p>New York</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
             </div>
-            
+            <!-- Restaurant Card n3 -->
             <div class="restaurant-cards">
-                <a href="">
-                <div class="card-image">
-                    <img src="images/bastille.jpg" alt="Bastille">
-                </div>
-                <div class="card-info">
-                    <div class="info">
-                        <h3>Bastille</h3>
-                        <p>New York</p>
+                <a href="bastille.html">
+                    <div class="card-image">
+                        <img src="images/bastille.jpg" alt="Bastille">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="card-info">
+                        <div class="info">
+                            <h3>Bastille</h3>
+                            <p>New York</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
             </div>
+            <!-- Restaurant Card n4 -->
             <div class="restaurant-cards">
-                <a href="">
-                <div class="card-image">
-                    <img src="images/gourmand.jpg" alt="Le Gourmand">
-                </div>
-                <div class="card-info">
-                    <div class="info">
-                        <h3>Le Gourmand</h3>
-                        <p>New York</p>
+                <a href="legourmand.html">
+                    <div class="card-image">
+                        <img src="images/gourmand.jpg" alt="Le Gourmand">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="card-info">
+                        <div class="info">
+                            <h3>Le Gourmand</h3>
+                            <p>New York</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </a>
             </div>
-
         </div>
-    </div>
+    </section>
     <!-- Footer Section -->
     <footer>
         <h3 class="footer-logo">ohmyfood</h3>
@@ -122,6 +127,8 @@
             <li><a href="mailto: test@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
+    <!-- Footer End  -->
     </div>
+    <!-- Main Container End  -->
 </body>
 </html>

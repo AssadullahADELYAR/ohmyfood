@@ -1,5 +1,5 @@
 .hero-image {
-    height: 28rem;
+    height: 50rem;
     overflow: hidden;
     img {
         width: 115%;
@@ -19,6 +19,7 @@
     }
 }
 .menu-container {
+    margin-bottom: 5rem;
     h3 {
         font-size: 1.8rem;
         font-weight: 400;
@@ -33,7 +34,6 @@
             margin-top: 0.3rem;
         }
     }
-    
 }
 .menu-list {
     display: flex;
@@ -41,10 +41,11 @@
     background-color: $color-background;
     overflow: hidden;
     border-radius: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     @include box-shadow;
     cursor: pointer;
     position: relative;
+    opacity: 0;
 }
 .menu-items {
     background-color: #fff;
@@ -85,6 +86,7 @@
     align-items: center;
     justify-content: center;
     margin-right: -10rem;
+    max-width: 10rem;
 }
 .menu-items:hover {
     width: calc(100% - 10rem);
@@ -100,12 +102,36 @@
 }
 .menu-items:hover + .menu-animation > .fa-circle-check {
     transform: rotate(360deg);
-    
-    
 }
-
 .order {
     margin: 5rem auto;
     width: 25rem;
     display: block;
+}
+div.menu-container >:nth-child(2) {
+    animation: menu-animate 1s ease 0s;
+    animation-fill-mode: forwards;
+}
+div.menu-container >:nth-child(3) {
+    animation: menu-animate 1s ease .3s;
+    animation-fill-mode: forwards;
+}
+div.menu-container >:nth-child(4) {
+    animation: menu-animate 1s ease .9s;
+    animation-fill-mode: forwards;
+}
+div.menu-container >:nth-child(5) {
+    animation: menu-animate 1s ease 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 45rem;
+    }
+}
+@media (max-width: 480px) {
+    .hero-image {
+        height: 30rem;
+    }
 }
