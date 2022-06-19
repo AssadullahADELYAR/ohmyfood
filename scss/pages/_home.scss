@@ -11,22 +11,26 @@
     animation: hide-loader 2s linear;
     animation-fill-mode: forwards;
 }
+
 .loader {
     width: 100px;
     height: 100px;
     border: 15px solid $color-primary;
     border-top: 15px solid $color-secondary;
     border-radius: 50%;
-    animation: loader 2s linear;    
+    animation: loader 2s linear;
 }
+
 // How it work buttons
 .hiw {
     padding: 6rem 2rem;
+
     .hiw-btn-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         min-width: 345px;
+
         .hiw-btn {
             flex-basis: 33%;
             background-color: $color-background;
@@ -42,6 +46,7 @@
             @include box-shadow;
             transition: all .8s ease-in-out;
             cursor: pointer;
+
             .fa-solid {
                 display: none;
                 font-size: 2.2rem;
@@ -50,6 +55,7 @@
                 margin-right: 2.5rem;
                 transition: all .8s ease-in-out
             }
+
             &::before {
                 position: relative;
                 color: #fff;
@@ -59,12 +65,15 @@
                 left: -1.5rem;
                 font-weight: 300;
             }
+
             &:nth-child(1)::before {
                 content: "1";
             }
+
             &:nth-child(2)::before {
                 content: "2";
             }
+
             &:nth-child(3)::before {
                 content: "3";
             }
@@ -72,24 +81,29 @@
 
     }
 }
+
 .hiw .hiw-btn-container .hiw-btn:hover {
     background-color: #f1e6ff;
 }
-.hiw .hiw-btn-container .hiw-btn:hover > .fa-solid {
+
+.hiw .hiw-btn-container .hiw-btn:hover>.fa-solid {
     color: $color-primary;
 }
+
 // Restaurant Section 
 .restaurant {
     background-color: $color-background;
     padding: 5rem 2rem;
+
     .restaurant-content {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        
+
     }
 }
+
 // Restaurant Cards 
 .restaurant-cards {
     border-radius: 1.5rem;
@@ -99,22 +113,27 @@
     cursor: pointer;
     transform: scale(.99);
     transition: all .3s ease-in-out;
+
     &:hover {
         box-shadow: 0 5px 30px -10px #e1bee7;
         transform: scale(1);
     }
+
     a {
         text-decoration: none;
         color: #000;
     }
+
     .card-image {
         position: relative;
         height: 23.5rem;
         overflow: hidden;
+
         img {
             width: 100%;
             border-radius: 1.5rem 1.5rem 0 0;
         }
+
         .btn-new {
             position: absolute;
             top: 2rem;
@@ -128,14 +147,17 @@
             border-radius: .3rem;
         }
     }
+
     .card-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 2rem;
+
         .info {
             line-height: 3rem;
         }
+
         .fa-heart {
             font-size: 3rem;
             transition: all .8s ease-in-out;
@@ -143,34 +165,42 @@
         }
     }
 }
+
 .restaurant-cards .card-info .fa-heart:hover {
     font-weight: 700;
     color: $color-primary;
 }
+
 // Media Queries for Tablets and Phones
 @media (max-width: 768px) {
     .hiw .hiw-btn-container {
         flex-direction: column;
     }
+
     .hiw .hiw-btn-container .hiw-btn {
         font-size: 2rem;
         text-align: left;
     }
+
     .hiw .hiw-btn-container .hiw-btn .fa-solid {
         display: inline-block;
     }
+
     .restaurant .restaurant-content {
         flex-direction: column;
         flex-wrap: wrap;
     }
 }
+
 @media (max-width: 480px) {
     .hiw .hiw-btn-container {
         flex-direction: column;
     }
+
     .hiw .hiw-btn-container .hiw-btn {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
+
     .hiw .hiw-btn-container .hiw-btn .fa-solid {
         display: inline-block;
     }
